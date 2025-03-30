@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+.bg-tts-background {
+    background-image: url('../assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.small-div-1{
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+/* Pointer and Animation for Buttons */
+.button-pointer {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .button-pointer:hover {
+    transform: scale(1.05);
+  }
+  
+@keyframes waveAnimation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .logo {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    animation: waveAnimation 0.5s ease-in-out;
+  }
+  @media screen and (max-width: 770px) {
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .small-div-1 {
+      padding: 4px;
+    }
+    .tts-container {
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-top-right-radius: 10%;
+
+    }
+    .header-section {
+      text-align: center;
+      width: 100%;
+      margin-bottom: auto;
+      padding-top: 2rem;
+
+  }
+  .converter-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+}
+.history-section {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+  
+    .tts-card {
+      width: 100%;
+      /* max-width: 320px; */
+    }
+  
+    .history-card {
+      width: 100%;
+      /* max-width: 360px; */
+      margin-top: 20px;
+    }
+  
+    .text-lg {
+      font-size: 1rem;
+    }
+  
+    .text-4xl {
+      font-size: 1.5rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.25rem;
+    }
+  
+    .rounded-xl {
+      border-radius: 0.75rem;
+    }
+  }
+  
